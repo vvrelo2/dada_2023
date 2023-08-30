@@ -1,8 +1,6 @@
 '''
 outfielder.py
 
-C int ball_trajectory(int x) {}
-
 v1 = 0.99m/s
 v2 = 9.99m/s
 
