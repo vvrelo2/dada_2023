@@ -1,0 +1,22 @@
+    // Entrada: N, la cantidad de términos de la serie de Fibonacci a generar
+    // Salida: Un arreglo con los primeros N términos de la serie de Fibonacci
+
+    Definir fibonacci como un arreglo de enteros
+    Agregar 0 y 1 a fibonacci // Inicializamos la serie con los dos primeros términos
+
+    Para i desde 2 hasta N - 1 hacer
+      siguienteTermino = fibonacci[i - 1] + fibonacci[i - 2]
+      Agregar siguienteTermino a fibonacci
+    Fin Para
+
+    Retornar fibonacci
+  Fin Función
+
+  Definir N como un entero
+  Definir resultado como un arreglo de enteros
+
+  N = 10 // Cambia este valor para obtener más o menos términos
+  resultado = generarFibonacci(N)
+
+  Escribir "Los primeros " + N + " términos de la serie de Fibonacci son: " + resultado
+Fin

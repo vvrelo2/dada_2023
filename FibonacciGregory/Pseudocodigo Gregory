@@ -1,0 +1,22 @@
+// Entrada de datos
+Leer numTerminos desde el usuario
+// Salida de datos
+Mostrar "Aproximación de Pi con", numTerminos, "términos:", aproximacionPi
+
+// Función para calcular la aproximación de Pi
+Función calcularPiGregoryLeibniz(numTerminos):
+    piAproximado = 0
+
+    Para i desde 0 hasta numTerminos - 1:
+        termino = 1 / (2 * i + 1)
+
+        Si i es par:
+            piAproximado = piAproximado + termino
+        Sino:
+            piAproximado = piAproximado - termino
+
+    Devolver piAproximado * 4
+
+// Calcular la aproximación de Pi
+aproximacionPi = calcularPiGregoryLeibniz(numTerminos)
+
